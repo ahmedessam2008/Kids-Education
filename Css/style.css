@@ -1,0 +1,145 @@
+/* For Global Style */
+* {
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+}
+button {
+  background-color: #0000001f;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  padding: 3px 5px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.details {
+  padding: 20px;
+  margin-top: -4px;
+  color: #fff;
+}
+.details h3 {
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.details p {
+  word-spacing: 1px;
+}
+/* Main For Body */
+body {
+  font-family: sans-serif;
+  border: 1px solid black;
+}
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 15px 15px;
+  justify-content: space-around;
+}
+.container > div {
+  position: relative;
+}
+.one {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+.one::after {
+  content: "NEWS";
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #495052;
+  color: #dad9d9;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  padding: 7px;
+  font-size: 12px;
+}
+.one .details {
+  background-color: #edbf47;
+}
+.two {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 6;
+  background-color: #e16c6c;
+}
+.three {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  background-color: #74cee4;
+}
+.four {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background-color: #ec774b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  font-size: 20px;
+}
+.four .details p {
+  font-size: 20px;
+  text-align: center;
+  position: relative;
+}
+.four .details p::after {
+  content: "John Doe";
+  position: absolute;
+  bottom: -28px;
+  right: 70px;
+  font-size: 13px;
+  color: #f1eaea;
+}
+.four .details p::before {
+  content: ",,";
+  position: absolute;
+  bottom: -34px;
+  left: 42px;
+  font-size: 75px;
+  color: #5f595936;
+}
+.five {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 6;
+}
+.five .details {
+  background-color: #6fc191;
+  padding: 9px;
+  text-align: center;
+}
+.sex {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  background-color: #c389ce;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.sex::before {
+  content: url(../images.png);
+  position: absolute;
+  bottom: 50px;
+  left: 35px;
+}
