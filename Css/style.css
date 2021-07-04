@@ -138,8 +138,12 @@ body {
   position: relative;
 }
 .sex::before {
-  content: url(../images.png);
+  background-image: url("../images.png");
+  background-size: 23px 21px;
+  display: inline-block;
+  width: 24px;
+  height: 20px;
+  content: "";
   position: absolute;
-  bottom: 50px;
-  left: 35px;
+  left: 55px;
 }
