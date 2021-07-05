@@ -138,12 +138,13 @@ body {
   position: relative;
 }
 .sex::before {
-  background-image: url("../images.png");
-  background-size: 23px 21px;
+  background-image: url(https://cdn2.iconfinder.com/data/icons/pittogrammi/142/95-512.png);
+  background-size: 23px 20px;
   display: inline-block;
   width: 24px;
   height: 20px;
   content: "";
   position: absolute;
-  left: 55px;
+  left: 111px;
+  bottom: 85px;
 }
