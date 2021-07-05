@@ -50,7 +50,10 @@ body {
   grid-row-start: 1;
   grid-row-end: 4;
 }
-.one::after {
+.one::after,
+.two::after,
+.three::after,
+.five::after {
   content: "NEWS";
   position: absolute;
   top: 15px;
@@ -140,6 +143,7 @@ body {
 .sex::before {
   background-image: url(https://cdn2.iconfinder.com/data/icons/pittogrammi/142/95-512.png);
   background-size: 23px 20px;
+  background-repeat: no-repeat;
   display: inline-block;
   width: 24px;
   height: 20px;
